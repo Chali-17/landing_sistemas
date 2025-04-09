@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Transparente</title>
+    <title>Sistemas Cobán</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,19 +11,26 @@
     <canvas id="matrixCanvas"></canvas>
     <nav class="navbar">
         <div class="logo">
-            <!-- Aquí agregas tu logo -->
+            <img src="logo.png" alt="Logo UMG" class="nav-logo">
+            <span class="logo-text">UMG Cobán</span>
         </div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#descripcion">Descripción</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#info-academica">Información Académica</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+    <!-- INICIO SECCIÓN HERO/INICIO -->
     <section id="inicio" class="hero-section">
         <h1 class="main-title">INGENIERÍA EN SISTEMAS DE INFORMACIÓN Y CIENCIAS DE LA COMPUTACIÓN</h1>
         <p class="subtitle">¡Ingeniería en sistemas te cambia la vida!</p>
     </section>
+    <!-- FIN SECCIÓN HERO/INICIO -->
     
+    <!-- INICIO SECCIÓN DESCRIPCIÓN -->
     <section id="descripcion" class="description-section">
         <h2 class="section-title">Descripción</h2>
         <div class="description-container">
@@ -49,6 +56,176 @@
             </div>
         </div>
     </section>
+    <!-- FIN SECCIÓN DESCRIPCIÓN -->
+    
+    <!-- INICIO SECCIÓN INFORMACIÓN ACADÉMICA -->
+    <section id="info-academica" class="academic-section">
+        <h2 class="section-title">Información Académica</h2>
+        <div class="academic-container">
+            <div class="academic-card">
+                <h3>Título académico a obtener</h3>
+                <p>Ingeniero en Sistemas de Información y Ciencias de la Computación</p>
+            </div>
+            
+            <div class="academic-card">
+                <h3>Grado Académico</h3>
+                <p>Ingeniería</p>
+            </div>
+            
+            <div class="academic-card">
+                <h3>Duración</h3>
+                <p>5 Años</p>
+            </div>
+
+            <div class="academic-card">
+                <h3>Modalidad de estudio</h3>
+                <p>Presencial</p>
+            </div>
+
+            <div class="academic-card">
+                <h3>Jornada</h3>
+                <p>Diario Vespertina y Sábado Matutina</p>
+            </div>
+
+            <div class="academic-card">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes de 18:00 a 21:00</p>
+                <p>Sábado según plan de estudios</p>
+            </div>
+        </div>
+        <div class="download-container">
+            <button id="downloadBtn" class="download-btn">
+                Pensum Ingeniería en Sistemas
+                <span class="download-icon">📥</span>
+            </button>
+        </div>
+    </section>
+    <!-- Add after the academic section -->
+        <section id="galeria" class="gallery-section">
+            <h2 class="section-title">Galería</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Placeholder for images -->
+                        <div class="carousel-slide">
+                            <img src="placeholder1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="placeholder2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="placeholder3.jpg" alt="Imagen 3">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn">❯</button>
+            </div>
+        </section>
+    <!-- Add after the gallery section -->
+        <section id="proyectos" class="projects-section">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn-projects">❮</button>
+                <div class="carousel projects-carousel">
+                    <div class="carousel-track projects-track">
+                        <div class="project-slide">
+                            <div class="project-content">
+                                <img src="project1.jpg" alt="Proyecto 1">
+                                <div class="project-info">
+                                    <h3>Nombre del Proyecto 1</h3>
+                                    <p>Descripción del proyecto. Aquí puedes detallar los aspectos más importantes.</p>
+                                    <div class="project-tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-slide">
+                            <div class="project-content">
+                                <img src="project2.jpg" alt="Proyecto 2">
+                                <div class="project-info">
+                                    <h3>Nombre del Proyecto 2</h3>
+                                    <p>Descripción del proyecto. Aquí puedes detallar los aspectos más importantes.</p>
+                                    <div class="project-tags">
+                                        <span>React</span>
+                                        <span>Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-slide">
+                            <div class="project-content">
+                                <img src="project3.jpg" alt="Proyecto 3">
+                                <div class="project-info">
+                                    <h3>Nombre del Proyecto 3</h3>
+                                    <p>Descripción del proyecto. Aquí puedes detallar los aspectos más importantes.</p>
+                                    <div class="project-tags">
+                                        <span>Python</span>
+                                        <span>Django</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn-projects">❯</button>
+            </div>
+        </section>
+        <section id="contacto" class="contact-section">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <!-- Sección de información de contacto -->
+                <div class="contact-info">
+                    <!-- Tarjeta de ubicación -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <h3>Ubicación</h3>
+                        <p>Ciudad de Guatemala</p>
+                    </div>
+                    <!-- Tarjeta de correo electrónico -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <h3>Email</h3>
+                        <p>info.sistemas@universidad.edu.gt</p>
+                    </div>
+                    <!-- Tarjeta de teléfono -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <h3>Teléfono</h3>
+                        <p>+502 XXXX-XXXX</p>
+                    </div>
+                </div>
+                
+                <!-- Formulario de contacto -->
+                <!-- Nota: Este es solo el esqueleto del formulario. Necesita configurarse con un servicio de backend para funcionar -->
+                <form class="contact-form">
+                    <!-- Campo para el nombre -->
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <!-- Campo para el correo -->
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <!-- Área de texto para el mensaje -->
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" required></textarea>
+                    </div>
+                    <!-- Botón de envío -->
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <img src="logo-placeholder.png" alt="Logo UMG" class="footer-logo">
+                <div class="footer-text">© Copyright 2025 | Universidad Mariano Gálvez | <a href="#" class="footer-link">Campus Cobán</a> | Todos los derechos reservados</div>
+            </div>
+        </footer>
     <script src="matrix.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
